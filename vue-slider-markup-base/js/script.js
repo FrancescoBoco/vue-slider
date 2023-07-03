@@ -56,16 +56,17 @@ createApp({
         }
     },
     methods: {
-        selectSlide(){
-            activeSlide += 1
-
-            if (activeSlide == 6  ){
-                activeSlide = 1
-            if (activeSlide >= slides.length  ){
-                activeSlide = 0
+        nextSlide(){
+            if(this.activeSlide < this.slides.length - 1){
+                this.activeSlide += 1
+            }else{
+                this.activeSlide = 0
             }
-            }
+        },
+        prevSlide(){
+            
         }
+
     }
 }).mount('#app')
 

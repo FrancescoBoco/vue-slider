@@ -16,6 +16,8 @@
     width: 700px;
     height: 300px;
     position: relative;
+    display: none;
+
     
 }
 
@@ -23,7 +25,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
 }
 
 .item .text {
@@ -44,13 +45,14 @@
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
+    
+
 }
 
 .thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
 }
 
 .thumb.active {
@@ -124,6 +126,6 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
 }
 
 
-.display-slides{
-    display: inline-block;
+.item.active{
+    display: block;
 }
