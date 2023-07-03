@@ -25,7 +25,9 @@
                             {{slide.text}}
                         </p>
                     </div>
-                    <div class="prev"></div>
+                    <div class="prev" 
+                    :class="slide.disply ? 'disply-slides' : ''"
+                    ></div>
                     <div class="next"></div>
                 </div>
 

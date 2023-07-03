@@ -59,7 +59,7 @@ createApp({
         }
     },
     methods: {
-        slectSlide(indexSlides){
+        selectSlide(indexSlides){
             if(this.splides[indexSlides].display == false){
                 this.splides[indexSlides].display == true;
             }
