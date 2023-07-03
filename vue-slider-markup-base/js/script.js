@@ -19,14 +19,14 @@ Milestone 2:
 
 */
 
-console.log(Vue)
+
 
 const {createApp} = Vue
-console.log(createApp)
 
 createApp({
     data(){
         return{ 
+            
             activeSlide: 0,
             slides: [
             {
