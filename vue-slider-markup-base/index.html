@@ -19,7 +19,7 @@
 
                 <div v-for="(slide, index) in slides" class="item" 
                 :class="activeSlide == index ? 'display-slides' : ''">
-                    <img :src="slide.image" alt="Spiderman" />
+                    <img :src="slide.image" alt="Spiderman"/>
                     <div class="text">
                         <h3>{{slide.title}}</h3>
                         <p>
@@ -29,15 +29,17 @@
                     
                     <div class="prev" 
                     @click="selectSlide(index)"
-                    ></div>
+                    >
+                    </div>
                     <div class="next"></div>
+                    </div>
                 </div>
-
                 <div class="thumbs">
                    
                     <div class="thumb active">
                         <img :src="slide.image" alt="Svezia" />
                     </div>
+                </div>
             </div>
         </div>
 
