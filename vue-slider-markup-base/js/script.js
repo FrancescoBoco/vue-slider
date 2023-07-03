@@ -64,7 +64,11 @@ createApp({
             }
         },
         prevSlide(){
-            
+            if(this.activeSlide < this.slides.length - 1){
+                this.activeSlide -= 1
+            }else{
+                this.activeSlide = 5
+            }
         }
 
     }

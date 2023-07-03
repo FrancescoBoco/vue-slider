@@ -18,7 +18,8 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div v-for="(slide, index) in slides" class="item" 
-                :class="activeSlide == index ? 'active' : ''">
+                :class="activeSlide == index ? 'active' : ''"
+                >
                     <img :src="slide.image" alt="Spiderman"/>
                     <div class="text">
                         <h3>{{slide.title}}</h3>
@@ -27,7 +28,7 @@
                         </p>
                     </div>
                     
-                    <div class="prev " 
+                    <div class="prev  " @click="prevSlide()" 
                     >
                     
                     </div>
