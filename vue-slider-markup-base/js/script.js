@@ -81,7 +81,7 @@ createApp({
                 this.activeSlide -= 1
             }
             else{
-                this.activeSlide = 4
+                this.activeSlide = this.slides.length - 1
             }
             
         }
