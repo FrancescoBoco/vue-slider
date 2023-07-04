@@ -57,21 +57,33 @@ createApp({
     },
     methods: {
         nextSlide(){
+            
+            // if(this.activeSlide < this.slides.lenght - 1){
+
+            //     this.activeSlide++
+            // }
+
+            // else{
+            //     this.activeSlide = 0
+            // }
             if(this.activeSlide < this.slides.length - 1){
                 this.activeSlide += 1
             }else{
                 this.activeSlide = 0
             }
+
+
+           
         },
         prevSlide(){
             
-            this.activeSlide -= 1
-            
-            if (this.activeSlide == 0  ){
-            this.activeSlide = 4
+            if(this.activeSlide > 0){
+                this.activeSlide -= 1
             }
-       
-
+            else{
+                this.activeSlide = 4
+            }
+            
         }
     }
 
