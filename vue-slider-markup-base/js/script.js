@@ -64,14 +64,18 @@ createApp({
             }
         },
         prevSlide(){
-            if(this.activeSlide < this.slides.length - 1){
-                this.activeSlide -= 1
-            }else{
-                this.activeSlide = 5
+            
+            this.activeSlide -= 1
+            
+            if (this.activeSlide == 0  ){
+            this.activeSlide = 4
             }
-        }
+       
 
+        }
     }
+
+    
 }).mount('#app')
 
 
